@@ -1,0 +1,81 @@
+.mainblock {
+  border: 1px blue solid;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.lefttextblock,
+.rightimageblock {
+  width: 50%;
+  border: 1px green solid;
+}
+
+.lefttextblock {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.ul {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.trans,
+.boldred,
+.boldblue,
+.boldgreen,
+.boldorange {
+  font-weight: bold;
+}
+
+.boldred {
+  color: red;
+}
+
+.boldblue {
+  color: blue;
+}
+
+.boldgreen {
+  color: green;
+}
+
+.boldorange {
+  color: orange;
+}
+
+.question {
+  color: #787f84;
+  font-size: 22px;
+}
+
+.allbuttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 35%;
+  margin-left: 20px;
+}
+
+.demobutton,
+.contactbutton {
+  border-radius: 25px;
+  background: linear-gradient(to right, #1a3da7, #27aaf6);
+  color: white;
+  padding-top: 3px;
+  width: 20%;
+  height: 40px;
+  border: none;
+  width: 150px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contactbutton {
+  background-color: #ffffff;
+  background: none;
+  border: 1px solid #494949;
+  color: #494949;
+}

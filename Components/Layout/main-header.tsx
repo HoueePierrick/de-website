@@ -4,11 +4,52 @@ import classes from "./main-header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function MainHeader() {
+  const textContent = {
+    EN: {
+      presentation: "Presentation",
+      solutions: "Solutions",
+      contact: "Contact",
+      languageOne: "English",
+      languageTwo: "Deutsch",
+      connect: "Connect",
+    },
+    DE: {
+      presentation: "Präsentation",
+      solutions: "Lösungen",
+      contact: "Kontakt",
+      languageOne: "Deutsch",
+      languageTwo: "English",
+      connect: "Verbinden",
+    },
+  };
   return (
     <header>
-      <h1>Header</h1>
-      <FontAwesomeIcon icon="prescription-bottle-medical" />
-      {/* <Link href="/events">Browse All Events</Link> */}
+      {/* Reimplace with real logo */}
+      <FontAwesomeIcon
+        icon="prescription-bottle-medical"
+        className={classes.companylogo}
+      />
+      <nav className={classes.nav}>
+        <Link href="/en/home" className={classes.link}>
+          {textContent.EN.presentation}
+        </Link>
+        <Link href="/en/home/solutions" className={classes.link}>
+          {textContent.EN.solutions}
+        </Link>
+        <Link href="/en/home/contact" className={classes.link}>
+          {textContent.EN.contact}
+        </Link>
+        <div className={classes.languages}>
+          <span>{textContent.EN.languageOne}</span>
+          <FontAwesomeIcon icon="caret-down" className={classes.caret} />
+          <ul className={classes.ul}>
+            <li>{textContent.EN.languageTwo}</li>
+          </ul>
+        </div>
+        <Link href="/en/home/connect" className={classes.connect}>
+          {textContent.EN.connect}
+        </Link>
+      </nav>
     </header>
   );
 }

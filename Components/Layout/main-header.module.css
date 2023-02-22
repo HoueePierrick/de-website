@@ -1,0 +1,52 @@
+.companylogo {
+  /* border: 1px blue solid; */
+  height: 100%;
+  width: 20%;
+}
+
+.nav {
+  width: 35%;
+  /* border: 1px blue solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  height: 100%;
+  color: #0a0000;
+}
+
+.link,
+.languages,
+.connect {
+  text-decoration: none;
+  color: #0a0000;
+  font-weight: bold;
+  /* width: 150px; */
+  /* border: 1px green solid; */
+  height: 50%;
+  text-align: center;
+  padding-top: calc(80px / 8 - 8px);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.languages {
+  /*  */
+}
+
+.connect {
+  border-radius: 25px;
+  background: linear-gradient(to right, #1a3da7, #27aaf6);
+  color: white;
+  padding-top: 8px;
+  width: 20%;
+  height: 40px;
+}
+
+.caret {
+  margin-left: 10px;
+}
+
+.ul {
+  visibility: hidden;
+}

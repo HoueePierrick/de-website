@@ -46,13 +46,56 @@ opacity: 0;
 margin-left: min(30px, 15%);
 */
 
-/* Hide scrollbar for Chrome, Safari and Opera 
-.backoffice-cart::-webkit-scrollbar {
+/* Hide scrollbar for Chrome, Safari and Opera  */
+.body::-webkit-scrollbar {
   display: none;
-}*/
+}
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.backoffice-cart {
+.body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+body {
+  margin: 0px;
+  font: "Poppins";
+  overflow-y: scroll;
+}
+
+header {
+  display: flex;
+  border: 1px red solid;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 8px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px black solid;
+  margin-top: 90px;
+  margin-bottom: 5px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+footer {
+  display: flex;
+  border: 1px red solid;
+  justify-content: space-between;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 48px;
 }
