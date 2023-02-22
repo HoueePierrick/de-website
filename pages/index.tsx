@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         <img
           className={classes.rightimageblock}
-          src={`/images/first-image.jpg`}
+          src={`/images/general-images/first-image.jpg`}
           alt="Blurred pharmacy image"
         ></img>
       </div>
@@ -61,7 +61,7 @@ export default function Home() {
               icon="prescription-bottle"
               className={classes.solutiontlogo}
             />
-            <h2 className={classes.solutionttitle}>TRANSLINEAR</h2>
+            <h3 className={classes.solutionttitle}>TRANSLINEAR</h3>
           </div>
           <span className={classes.solutionsummary}>
             Get detailed data on the content of pharmacies&apos; shelves
@@ -90,7 +90,7 @@ export default function Home() {
               icon="money-bill-trend-up"
               className={classes.solutiontlogo}
             />
-            <h2 className={classes.solutionttitle}>TRANSECOMMERCE</h2>
+            <h3 className={classes.solutionttitle}>TRANSECOMMERCE</h3>
           </div>
           <span className={classes.solutionsummary}>
             Get all the data about your ecommerce presence
@@ -127,7 +127,7 @@ export default function Home() {
               icon="rectangle-ad"
               className={classes.solutiontlogo}
             />
-            <h2 className={classes.solutionttitle}>TRANSPROMO</h2>
+            <h3 className={classes.solutionttitle}>TRANSPROMO</h3>
           </div>
           <span className={classes.solutionsummary}>
             See the full details of how your promotions and your
@@ -165,7 +165,7 @@ export default function Home() {
               icon="arrow-up-right-dots"
               className={classes.solutiontlogo}
             />
-            <h2 className={classes.solutionttitle}>TRANSIMPACT</h2>
+            <h3 className={classes.solutionttitle}>TRANSIMPACT</h3>
           </div>
           <span className={classes.solutionsummary}>
             We deep-dive in you data to give you powerful insights
@@ -192,9 +192,63 @@ export default function Home() {
           </ul>
         </div>
       </div>
+
+      {/* They trust us section */}
+      {/* Prepare a deployment for it to be fed by our client list */}
       <div className={classes.mainblock}>
         <h2>They trust us:</h2>
-        <div className={classes.alllogos}></div>
+        <div className={classes.alllogos}>
+          <img
+            src={"/images/company-logos/Bausch-lomb-logo.png"}
+            alt="Bausch & Lomb logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/Bayer-logo.png"}
+            alt="Bayer logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/Colgate-logo.png"}
+            alt="Colgate logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/Elanco-logo.png"}
+            alt="Elanco logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/Haleon-logo.png"}
+            alt="Haleon logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/Ipsen-logo.png"}
+            alt="Ipsen logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/J&J-logo.png"}
+            alt="J&J logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/L'Oreal-logo.png"}
+            alt="L'Oréal logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/Naos-logo.jpg"}
+            alt="Naos logo"
+            className={classes.companylogo}
+          />
+          <img
+            src={"/images/company-logos/Nestle-logo.png"}
+            alt="Nestlé logo"
+            className={classes.companylogo}
+          />
+        </div>
       </div>
       <div className={classes.mainblock}>
         What we offer: data, solution content, demo

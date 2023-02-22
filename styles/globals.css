@@ -98,3 +98,9 @@ footer {
 h1 {
   font-size: 48px;
 }
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
