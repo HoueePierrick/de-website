@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import classes from "./index.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
     <Fragment>
+      {/* 1st block */}
       <div className={classes.mainblock}>
         <div className={classes.lefttextblock}>
           <h1>Our slogan is to do xyz</h1>
@@ -11,22 +13,28 @@ export default function Home() {
             <li>
               <span className={classes.trans}>Trans</span>
               <span className={classes.boldred}>Linear</span>
-              <span>: get information on pharmacy linears</span>
+              <span>
+                : get detailed data on the content of pharmacies&apos; shelves
+              </span>
             </li>
             <li>
               <span className={classes.trans}>Trans</span>
               <span className={classes.boldblue}>Ecommerce</span>
-              <span>: get information on e-commerce</span>
+              <span>: get all the data about your ecommerce presence</span>
             </li>
             <li>
               <span className={classes.trans}>Trans</span>
               <span className={classes.boldgreen}>Promo</span>
-              <span>: get information on promotions</span>
+              <span>
+                : see the full details of how your promotions are played
+              </span>
             </li>
             <li>
               <span className={classes.trans}>Trans</span>
               <span className={classes.boldorange}>Impact</span>
-              <span>: get insights on all your data</span>
+              <span>
+                : we deep-dive in you data to give you powerful insights
+              </span>
             </li>
           </ul>
           <span className={classes.question}>
@@ -43,23 +51,151 @@ export default function Home() {
           alt="Blurred pharmacy image"
         ></img>
       </div>
-      <div className={classes.mainblock}>
-        <div>
-          <div>
-            <span>Logo</span>
-            <span>Title</span>
+
+      {/* 2nd block */}
+      <div className={classes.solutionmainblock}>
+        {/* TransLinear */}
+        <div className={classes.solutionblock}>
+          <div className={classes.solutiontlogotitle} style={{ color: "red" }}>
+            <FontAwesomeIcon
+              icon="prescription-bottle"
+              className={classes.solutiontlogo}
+            />
+            <h2 className={classes.solutionttitle}>TRANSLINEAR</h2>
           </div>
-          <span>Summary of the solution</span>
-          <ul>
-            <li>It does x</li>
-            <li>It does y</li>
+          <span className={classes.solutionsummary}>
+            Get detailed data on the content of pharmacies&apos; shelves
+          </span>
+          <ul className={classes.solutionul}>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>A panel of 800 pharmacies throughout Germany</span>
+            </li>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>Dashboards based on your view of the market</span>
+            </li>
           </ul>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        {/* TransEcommerce */}
+        <div className={classes.solutionblock}>
+          <div className={classes.solutiontlogotitle} style={{ color: "blue" }}>
+            <FontAwesomeIcon
+              icon="money-bill-trend-up"
+              className={classes.solutiontlogo}
+            />
+            <h2 className={classes.solutionttitle}>TRANSECOMMERCE</h2>
+          </div>
+          <span className={classes.solutionsummary}>
+            Get all the data about your ecommerce presence
+          </span>
+          <ul className={classes.solutionul}>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>
+                15 top-sites and 1,000 click and collect screened weekly
+              </span>
+            </li>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>
+                Detailed data on price, distribution and content of all your
+                references
+              </span>
+            </li>
+          </ul>
+        </div>
+        {/* TransPromo */}
+        <div className={classes.solutionblock}>
+          <div
+            className={classes.solutiontlogotitle}
+            style={{ color: "green" }}
+          >
+            <FontAwesomeIcon
+              icon="rectangle-ad"
+              className={classes.solutiontlogo}
+            />
+            <h2 className={classes.solutionttitle}>TRANSPROMO</h2>
+          </div>
+          <span className={classes.solutionsummary}>
+            See the full details of how your promotions and your
+            competitors&apos; are played
+          </span>
+          <ul className={classes.solutionul}>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>
+                Leaflets collected and analysed monthly for 15 distributors
+              </span>
+            </li>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>
+                Detailed data up to each offer of each player for each
+                distributor
+              </span>
+            </li>
+          </ul>
+        </div>
+        {/* TransImpact */}
+        <div className={classes.solutionblock}>
+          <div
+            className={classes.solutiontlogotitle}
+            style={{ color: "orange" }}
+          >
+            <FontAwesomeIcon
+              icon="arrow-up-right-dots"
+              className={classes.solutiontlogo}
+            />
+            <h2 className={classes.solutionttitle}>TRANSIMPACT</h2>
+          </div>
+          <span className={classes.solutionsummary}>
+            We deep-dive in you data to give you powerful insights
+          </span>
+          <ul className={classes.solutionul}>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>
+                Our proprietary data crossed with your own, and panelist data
+              </span>
+            </li>
+            <li className={classes.solutionli}>
+              <FontAwesomeIcon
+                icon="circle-check"
+                className={classes.tickcircle}
+              />
+              <span>
+                Unique insights on how you can boost your sales and margins
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className={classes.mainblock}>They trust us</div>
+      <div className={classes.mainblock}>
+        <h2>They trust us:</h2>
+        <div className={classes.alllogos}></div>
+      </div>
       <div className={classes.mainblock}>
         What we offer: data, solution content, demo
       </div>

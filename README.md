@@ -6,3 +6,4 @@
 4. Create a logo, and use it to change header and favicon
 5. Learn how to use Image
 6. Learn how to make automatic redirects
+7. Reimplace Fontawesomes by real logos
