@@ -79,7 +79,6 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
-  border: 1px black solid;
   margin-top: 90px;
   margin-bottom: 5px;
   height: 100%;
@@ -89,10 +88,10 @@ main {
 
 footer {
   display: flex;
-  border: 1px red solid;
   justify-content: space-between;
   height: 80px;
   box-sizing: border-box;
+  background-color: lightblue;
 }
 
 h1 {
@@ -103,4 +102,8 @@ h2 {
   font-size: 36px;
   text-align: center;
   width: 100%;
+}
+
+h3 {
+  font-size: 30px;
 }

@@ -9,3 +9,7 @@
 7. Reimplace Fontawesomes by real logos
 8. Automate client logo generation
 9. Add responsive design
+10. Work on client database
+11. Work on an employee database
+12. Work on a solution database
+13. Excave components : solution x 2, client carousel, team members

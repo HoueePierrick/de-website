@@ -250,11 +250,68 @@ export default function Home() {
           />
         </div>
       </div>
+
+      {/* About us section */}
       <div className={classes.mainblock}>
-        What we offer: data, solution content, demo
+        <h2>Our Team :</h2>
+        <div className={classes.fullTeam}>
+          <div className={classes.teamMember}>
+            <img
+              src={"/images/employee-images/PierrickHOUEE.jpg"}
+              alt="Pierrick HOUEE's image"
+              className={classes.employeeImage}
+            ></img>
+            <div className={classes.employeebio}>
+              <div className={classes.jobtitle}>
+                <h3>Pierrick HOUEE</h3>
+                <h3> - </h3>
+                <h3>Founder & CEO</h3>
+              </div>
+              <ul>
+                <li>
+                  After experiences in counsulting at the BCG, in start-up
+                  operations at Gozem, a failed entrepreneurship at Fabor, and
+                  pharma expertise at Fact
+                </li>
+                <li>Pierrick launched Fact. He manages </li>
+              </ul>
+              <div className={classes.employeelogos}>
+                <a
+                  href="mailto:houee.pierrick@gmail.com?subject=Contact"
+                  className={classes.clickablelogo}
+                >
+                  <img
+                    src={"/images/company-logos/Gmail-logo.png"}
+                    alt="Email logo"
+                    className={classes.profileRedirect}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/pierrick-hou%C3%A9e-600a6168/"
+                  className={classes.clickablelogo}
+                >
+                  <img
+                    src={"/images/company-logos/LinkedIn-logo.png"}
+                    alt="LinkedIn logo"
+                    className={classes.profileRedirect}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className={classes.mainblock}>About us: team</div>
-      <div className={classes.mainblock}>Contact us</div>
+      <div className={classes.mainblock}>
+        <span className={classes.finalquestion}>
+          YOU WANT TO LEARN MORE ABOUT US?
+        </span>
+        <div className={classes.finalallbuttons}>
+          <button className={classes.demobutton}>Book a demo</button>
+          <button className={classes.contactbutton}>Contact us</button>
+        </div>
+      </div>
     </Fragment>
   );
 }
