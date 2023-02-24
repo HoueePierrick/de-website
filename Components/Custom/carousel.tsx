@@ -1,16 +1,21 @@
 import React from "react";
 import classes from "./carousel.module.css";
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-function Carousel(props: any) {
+// interface props {
+//   data: any[];
+// }
+
+function MyCarousel(props: any) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1,
+      items: 5,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -18,66 +23,42 @@ function Carousel(props: any) {
     },
   };
 
+  const { data } = props;
+
   return (
-    <div className="full-product-sku">
-      {/* Convert it to a carousel */}
-      {skuProduct && skuProduct.images && skuProduct.images.length > 1 ? (
-        <Carousel
-          className="carousel"
-          swipeable={false}
-          draggable={false}
-          showDots={true}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          slidesToSlide={1}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {skuProduct.images.map((elem, index) => {
-            return (
-              <img
-                src={elem}
-                key={index}
-                className="img-product-sku"
-                alt={`Carousel ${index}`}
-              ></img>
-            );
-          })}
-        </Carousel>
-      ) : (
-        <img
-          src={skuProduct.thumbnail}
-          className="imgonly-product-sku"
-          alt={skuProduct.slug}
-        ></img>
-      )}
-      <div className="details-product-sku">
-        <span className="name-product-sku">
-          {skuProduct && skuProduct.name && skuProduct.name}
-        </span>
-        <span className="price-product-sku">
-          {skuProduct && skuProduct.price && price(skuProduct.price)}
-        </span>
-        {/* Check for address */}
-        <button
-          className="add-product-sku"
-          onClick={() => {
-            skuProduct && cartChange(skuProduct, "increase");
-            setCollectAddress(true);
-          }}
-        >
-          Ajouter un article
-        </button>
-      </div>
-    </div>
+    <Carousel
+      className={classes.carousel}
+      swipeable={true}
+      draggable={false}
+      showDots={false}
+      responsive={responsive}
+      ssr={true} // means to render carousel on server-side.
+      infinite={true}
+      slidesToSlide={3}
+      autoPlay={true}
+      autoPlaySpeed={1500}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={500}
+      containerClass="carousel-container"
+      removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+      dotListClass="custom-dot-list-style"
+      itemClass="carousel-item-padding-40-px"
+      partialVisible={false}
+    >
+      {data.map((e: any, i: number) => {
+        console.log(e);
+        return (
+          <img
+            src={e.logoPath}
+            key={i}
+            className={classes.companylogo}
+            alt={`${e.name} logo`}
+          ></img>
+        );
+      })}
+    </Carousel>
   );
 }
 
-export default Carousel;
+export default MyCarousel;

@@ -1,8 +1,14 @@
 import React, { Fragment } from "react";
 import classes from "./index.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MyCarousel from "../Components/Custom/carousel";
+import Employee from "../Components/Custom/employee";
+import { activeClients } from "../data/clients";
+import { activeEmployees } from "../data/employees";
 
-export default function Home() {
+export default function Home(props: any) {
+  const { clientList, employeeList } = props;
+  // console.log(clientList);
   return (
     <Fragment>
       {/* 1st block */}
@@ -198,56 +204,7 @@ export default function Home() {
       <div className={classes.mainblock}>
         <h2>They trust us:</h2>
         <div className={classes.alllogos}>
-          <img
-            src={"/images/company-logos/Bausch-lomb-logo.png"}
-            alt="Bausch & Lomb logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/Bayer-logo.png"}
-            alt="Bayer logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/Colgate-logo.png"}
-            alt="Colgate logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/Elanco-logo.png"}
-            alt="Elanco logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/Haleon-logo.png"}
-            alt="Haleon logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/Ipsen-logo.png"}
-            alt="Ipsen logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/J&J-logo.png"}
-            alt="J&J logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/L'Oreal-logo.png"}
-            alt="L'Oréal logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/Naos-logo.jpg"}
-            alt="Naos logo"
-            className={classes.companylogo}
-          />
-          <img
-            src={"/images/company-logos/Nestle-logo.png"}
-            alt="Nestlé logo"
-            className={classes.companylogo}
-          />
+          <MyCarousel data={clientList}></MyCarousel>
         </div>
       </div>
 
@@ -255,52 +212,7 @@ export default function Home() {
       <div className={classes.mainblock}>
         <h2>Our Team :</h2>
         <div className={classes.fullTeam}>
-          <div className={classes.teamMember}>
-            <img
-              src={"/images/employee-images/PierrickHOUEE.jpg"}
-              alt="Pierrick HOUEE's image"
-              className={classes.employeeImage}
-            ></img>
-            <div className={classes.employeebio}>
-              <div className={classes.jobtitle}>
-                <h3>Pierrick HOUEE</h3>
-                <h3> - </h3>
-                <h3>Founder & CEO</h3>
-              </div>
-              <ul>
-                <li>
-                  After experiences in counsulting at the BCG, in start-up
-                  operations at Gozem, a failed entrepreneurship at Fabor, and
-                  pharma expertise at Fact
-                </li>
-                <li>Pierrick launched Fact. He manages </li>
-              </ul>
-              <div className={classes.employeelogos}>
-                <a
-                  href="mailto:houee.pierrick@gmail.com?subject=Contact"
-                  className={classes.clickablelogo}
-                >
-                  <img
-                    src={"/images/company-logos/Gmail-logo.png"}
-                    alt="Email logo"
-                    className={classes.profileRedirect}
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/pierrick-hou%C3%A9e-600a6168/"
-                  className={classes.clickablelogo}
-                >
-                  <img
-                    src={"/images/company-logos/LinkedIn-logo.png"}
-                    alt="LinkedIn logo"
-                    className={classes.profileRedirect}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+          <Employee data={employeeList}></Employee>
         </div>
       </div>
       <div className={classes.mainblock}>
@@ -314,4 +226,19 @@ export default function Home() {
       </div>
     </Fragment>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      clientList: activeClients,
+      employeeList: activeEmployees,
+    },
+    // Time period for every refrech by NextJS for every incoming request
+    // 10 means re-generated every 10s
+    revalidate: 60,
+    // If notFound: true, the page will return a 404 page
+    // Usefull if we can't fetch the data
+    notFound: false,
+  };
 }
