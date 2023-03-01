@@ -250,6 +250,5 @@ const activeClients = clients.filter(
     client.solutions.transImpact
 );
 
-console.log(activeClients);
 export { activeClients };
 export default clients;

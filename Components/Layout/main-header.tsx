@@ -30,13 +30,13 @@ function MainHeader() {
         className={classes.companylogo}
       />
       <nav className={classes.nav}>
-        <Link href="/en/home" className={classes.link}>
+        <Link href="/home" className={classes.link}>
           {textContent.EN.presentation}
         </Link>
-        <Link href="/en/home/solutions" className={classes.link}>
+        <Link href="/home/solutions" className={classes.link}>
           {textContent.EN.solutions}
         </Link>
-        <Link href="/en/home/contact" className={classes.link}>
+        <Link href="/home/contact" className={classes.link}>
           {textContent.EN.contact}
         </Link>
         <div className={classes.languages}>

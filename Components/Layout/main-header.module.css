@@ -1,11 +1,11 @@
 .companylogo {
-  /* border: 1px blue solid; */
   height: 100%;
   width: 20%;
 }
 
 .nav {
   width: 35%;
+  min-width: 600px;
   /* border: 1px blue solid; */
   display: flex;
   justify-content: space-between;
@@ -28,6 +28,7 @@
   padding-top: calc(80px / 8 - 8px);
   box-sizing: border-box;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .languages {
@@ -49,4 +50,16 @@
 
 .ul {
   visibility: hidden;
+}
+
+@media (max-width: 3000px) {
+  /* For responsive */
+}
+
+@media (max-width: 1024px) {
+  /* For responsive */
+}
+
+@media (max-width: 464px) {
+  /* For responsive */
 }

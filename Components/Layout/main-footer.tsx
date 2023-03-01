@@ -1,26 +1,69 @@
 import React from "react";
 import classes from "./main-footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 function MainFooter() {
+  const text = {
+    DE: {
+      about: "Über uns",
+      terms: "Allgemeine Geschäftsbedingungen",
+      legal: "Impressum",
+      contact: "Kontakt",
+      demo: "Demo buchen",
+      contactUS: "Kontaktieren Sie uns",
+      follow: "Folgen Sie uns",
+      rights: "Alle Rechte vorbehalten © 2023 Fabor",
+    },
+    EN: {
+      about: "About us",
+      terms: "Terms and Conditions",
+      legal: "Legal Notice",
+      contact: "Contact",
+      demo: "Book a demo",
+      contactUS: "Contact us",
+      follow: "Follow us",
+      rights: "All rights reserved © 2023 Fabor",
+    },
+  };
+
   return (
     <footer>
-      <div>
-        <h4>About us</h4>
-        <span>Terms and Conditions</span>
-        <div>Legal Notice</div>
+      <div className={classes.footerDiv}>
+        <h3 className={classes.h3}>{text.EN.about}</h3>
+        <Link href="/home/terms" className={classes.footerLink}>
+          {text.EN.terms}
+        </Link>
+        <Link href="/home/legal" className={classes.footerLink}>
+          {text.EN.legal}
+        </Link>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <span>Book a demo</span>
-        <span>Contact us</span>
+      <div className={classes.footerDiv}>
+        <h3 className={classes.h3}>{text.EN.contact}</h3>
+        <Link href="/home/demo" className={classes.footerLink}>
+          {text.EN.demo}
+        </Link>
+        <Link href="/home/contact" className={classes.footerLink}>
+          {text.EN.contactUS}
+        </Link>
       </div>
-      <div>
-        <h4>Follow us</h4>
-        <div>Linkedin</div>
+      <div className={classes.footerDiv}>
+        <h3 className={classes.h3}>{text.EN.follow}</h3>
+        {/* Replace with company linkedIn */}
+        <a
+          href="https://www.linkedin.com/in/pierrick-hou%C3%A9e-600a6168/"
+          className={classes.footerLink}
+        >
+          Linkedin
+        </a>
       </div>
-      <div>
-        <span>Logo</span>
-        <span>All rights reserved © 2023 Fabor</span>
+      <div className={classes.footerDiv}>
+        {/* Reimplace with real logo */}
+        <FontAwesomeIcon
+          icon="prescription-bottle-medical"
+          className={classes.companylogo}
+        />
+        <span>{text.EN.rights}</span>
       </div>
     </footer>
   );

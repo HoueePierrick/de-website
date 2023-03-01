@@ -1,0 +1,78 @@
+.ul {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.trans,
+.bold {
+  font-weight: bold;
+}
+
+.mainblock,
+.solutionmainblock {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.solutionmainblock {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.solutionblock {
+  width: 45%;
+  margin: 15px;
+  box-sizing: border-box;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.solutiontlogotitle {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.solutiontlogo {
+  height: 30px;
+  width: 50px;
+  margin-right: 5px;
+}
+
+.solutionttitle {
+  font-size: 24px;
+  font-weight: bold;
+  width: 90%;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.solutionsummary {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.solutionul {
+  list-style: none;
+}
+
+.tickcircle {
+  color: rgb(34, 201, 25);
+  margin-right: 10px;
+}
+
+@media (max-width: 3000px) {
+  /* For responsive */
+}
+
+@media (max-width: 1024px) {
+  /* For responsive */
+}
+
+@media (max-width: 464px) {
+  /* For responsive */
+}

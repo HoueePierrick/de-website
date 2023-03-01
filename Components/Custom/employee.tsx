@@ -15,17 +15,12 @@ function Employee(props: any) {
             ></img>
             <div className={classes.employeebio}>
               <div className={classes.jobtitle}>
-                <h3>Pierrick HOUEE</h3>
-                <h3> - </h3>
-                <h3>Founder & CEO</h3>
+                <span>{`${e.firstName} ${e.lastName}`}</span>
+                <span>{e.role.EN}</span>
               </div>
               <ul>
-                <li>
-                  After experiences in counsulting at the BCG, in start-up
-                  operations at Gozem, a failed entrepreneurship at Fabor, and
-                  pharma expertise at Fact
-                </li>
-                <li>Pierrick launched Fact. He manages </li>
+                <li>{e.descriptionOne.EN}</li>
+                <li>{e.descriptionTwo.EN}</li>
               </ul>
               <div className={classes.employeelogos}>
                 <a

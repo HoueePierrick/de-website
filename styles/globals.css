@@ -74,6 +74,7 @@ header {
   top: 0px;
   width: 100%;
   background-color: lightblue;
+  z-index: 1;
 }
 
 main {
@@ -83,15 +84,15 @@ main {
   margin-bottom: 5px;
   height: 100%;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 15px;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  height: 80px;
   box-sizing: border-box;
   background-color: lightblue;
+  padding: 15px;
 }
 
 h1 {
@@ -106,4 +107,34 @@ h2 {
 
 h3 {
   font-size: 30px;
+}
+
+@media (max-width: 3000px) {
+  /* For responsive */
+}
+
+@media (max-width: 1024px) {
+  /* For responsive */
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 464px) {
+  /* For responsive */
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }

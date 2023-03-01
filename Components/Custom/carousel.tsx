@@ -47,7 +47,6 @@ function MyCarousel(props: any) {
       partialVisible={false}
     >
       {data.map((e: any, i: number) => {
-        console.log(e);
         return (
           <img
             src={e.logoPath}

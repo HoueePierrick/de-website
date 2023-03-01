@@ -1,13 +1,9 @@
 # TO DO
 
-1. Import fonts in head
 2. Learn how to use redux in NextJS
-3. Update header
-4. Create a logo, and use it to change header and favicon
-5. Learn how to use Image (vs img)
-6. Learn how to make automatic redirects
-7. Reimplace Fontawesomes by real logos
-8. Automate client logo generation
-9. Add responsive design
-10. Work on a solution database
-11. Excave components : solution x 2, client carousel, team members
+3. Create a logo, and use it to change header and favicon
+4. Learn how to use Image (vs img)
+5. Learn how to make automatic redirects
+6. Reimplace Fontawesomes by real logos
+7. Automate client logo generation
+8. Add responsive design

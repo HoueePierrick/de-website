@@ -10,40 +10,12 @@
 .lefttextblock,
 .rightimageblock {
   width: 50%;
+  object-fit: cover;
 }
 
 .lefttextblock {
   box-sizing: border-box;
   padding: 10px;
-}
-
-.ul {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.trans,
-.boldred,
-.boldblue,
-.boldgreen,
-.boldorange {
-  font-weight: bold;
-}
-
-.boldred {
-  color: red;
-}
-
-.boldblue {
-  color: blue;
-}
-
-.boldgreen {
-  color: green;
-}
-
-.boldorange {
-  color: orange;
 }
 
 .question,
@@ -56,10 +28,10 @@
 .finalallbuttons {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
   height: 40px;
   width: 35%;
   margin-left: 20px;
+  width: 100%;
 }
 
 .demobutton,
@@ -74,6 +46,11 @@
   width: 150px;
   font-size: 18px;
   cursor: pointer;
+  display: flex;
+}
+
+.demobutton {
+  margin-right: 20px;
 }
 
 .contactbutton {
@@ -81,59 +58,6 @@
   background: none;
   border: 1px solid #494949;
   color: #494949;
-}
-
-.solutionmainblock {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-}
-
-.solutionblock {
-  width: 45%;
-  margin: 15px;
-  box-sizing: border-box;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.solutiontlogotitle {
-  align-items: center;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.solutiontlogo {
-  height: 30px;
-  width: 50px;
-  margin-right: 5px;
-}
-
-.solutionttitle {
-  font-size: 24px;
-  font-weight: bold;
-  width: 90%;
-  padding-top: 5px;
-  box-sizing: border-box;
-}
-
-.solutionsummary {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.solutionul {
-  list-style: none;
-}
-
-.tickcircle {
-  color: rgb(34, 201, 25);
-  margin-right: 10px;
-}
-
-.solutionli {
-  line-height: 27px;
-  font-size: 16px;
 }
 
 .alllogos {
@@ -165,4 +89,25 @@
 
 .finalallbuttons {
   margin: 20px 40%;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 7px 0px;
+}
+
+@media (max-width: 3000px) {
+  /* For responsive */
+}
+
+@media (max-width: 1024px) {
+  /* For responsive */
+}
+
+@media (max-width: 464px) {
+  /* For responsive */
 }
