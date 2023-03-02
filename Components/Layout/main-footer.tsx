@@ -40,9 +40,12 @@ function MainFooter() {
       </div>
       <div className={classes.footerDiv}>
         <h3 className={classes.h3}>{text.EN.contact}</h3>
-        <Link href="/home/demo" className={classes.footerLink}>
+        <a
+          href="https://calendly.com/houee-pierrick/60min"
+          className={classes.footerLink}
+        >
           {text.EN.demo}
-        </Link>
+        </a>
         <Link href="/home/contact" className={classes.footerLink}>
           {text.EN.contactUS}
         </Link>

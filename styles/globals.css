@@ -80,11 +80,12 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 5px;
   height: 100%;
   box-sizing: border-box;
   padding: 15px;
+  overflow: hidden;
 }
 
 footer {

@@ -1,9 +1,137 @@
+.solution {
+  width: 80%;
+  margin: 0% 10%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.logotitle {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  font-size: 48px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+.title {
+  margin-top: 3px;
+  width: 30px;
+  justify-content: start;
+}
+
+.descriptionShort {
+  margin-top: 10px;
+}
+
+.descriptionTwo {
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+.descriptionBullet {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.descriptionUL {
+  margin-top: 10px;
+}
+
+.rest {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.halfColumn {
+  width: 40%;
+  margin: 0% 2.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTitle {
+  font-size: 24px;
+  color: darkblue;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.method,
+.solutionli {
+  margin-bottom: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.methodIcon {
+  color: darkblue;
+  font-size: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.methodText {
+  font-size: 16px;
+}
+
+.tickcircle {
+  color: rgb(34, 201, 25);
+  margin-right: 10px;
+  margin-left: -30px;
+  margin-top: -10px;
+}
+
+.solutionul {
+  margin-top: 3px;
+}
+
+.demobutton,
+.contactbutton {
+  border-radius: 25px;
+  background: linear-gradient(to right, #1a3da7, #27aaf6);
+  color: white;
+  padding-top: 3px;
+  width: 20%;
+  height: 40px;
+  border: none;
+  width: 150px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 7px;
+}
+
 @media (max-width: 3000px) {
   /* For responsive */
 }
 
 @media (max-width: 1024px) {
   /* For responsive */
+  .halfColumn {
+    width: 90%;
+    margin: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 464px) {

@@ -2,7 +2,7 @@
 import React from "react";
 import classes from "./terms.module.css";
 
-async function Terms() {
+function Terms() {
   return <div>Terms</div>;
 }
 

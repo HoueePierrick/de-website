@@ -63,6 +63,11 @@
 .tickcircle {
   color: rgb(34, 201, 25);
   margin-right: 10px;
+  margin-left: -30px;
+}
+.solutionli {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media (max-width: 3000px) {
@@ -71,6 +76,16 @@
 
 @media (max-width: 1024px) {
   /* For responsive */
+  .solutionblock {
+    border: 1px red solid;
+    margin: 5px;
+    width: calc(50% - 10px);
+    min-width: 300px;
+  }
+  .solutionli {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 464px) {

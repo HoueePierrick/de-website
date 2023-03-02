@@ -2,7 +2,7 @@
 import React from "react";
 import classes from "./legal.module.css";
 
-async function Legal() {
+function Legal() {
   return <div>Legal</div>;
 }
 

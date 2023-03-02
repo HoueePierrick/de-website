@@ -2,7 +2,7 @@
 import React from "react";
 import classes from "./connect.module.css";
 
-async function Connect() {
+function Connect() {
   return <div>Connect</div>;
 }
 

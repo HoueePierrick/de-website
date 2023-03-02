@@ -19,8 +19,8 @@ function Employee(props: any) {
                 <span>{e.role.EN}</span>
               </div>
               <ul>
-                <li>{e.descriptionOne.EN}</li>
-                <li>{e.descriptionTwo.EN}</li>
+                <li className={classes.employeeli}>{e.descriptionOne.EN}</li>
+                <li className={classes.employeeli}>{e.descriptionTwo.EN}</li>
               </ul>
               <div className={classes.employeelogos}>
                 <a

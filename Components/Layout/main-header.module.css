@@ -1,12 +1,12 @@
 .companylogo {
-  height: 100%;
-  width: 20%;
+  height: 80%;
+  width: 15%;
+  color: black;
 }
 
 .nav {
   width: 35%;
   min-width: 600px;
-  /* border: 1px blue solid; */
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -9,6 +9,14 @@ import {
   faRectangleAd,
   faArrowUpRightDots,
   faCircleCheck,
+  faMapLocationDot,
+  faBoxesStacked,
+  faStar,
+  faGlobe,
+  faShop,
+  faMagnifyingGlassChart,
+  faBusinessTime,
+  faFilterCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faPrescriptionBottleMedical,
@@ -17,7 +25,15 @@ library.add(
   faMoneyBillTrendUp,
   faRectangleAd,
   faArrowUpRightDots,
-  faCircleCheck
+  faCircleCheck,
+  faMapLocationDot,
+  faBoxesStacked,
+  faStar,
+  faGlobe,
+  faShop,
+  faMagnifyingGlassChart,
+  faBusinessTime,
+  faFilterCircleXmark
 );
 import Layout from "@/Components/Layout/layout";
 

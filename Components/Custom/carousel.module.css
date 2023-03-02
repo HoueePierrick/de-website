@@ -10,14 +10,23 @@
   height: 100%;
   padding: 3px 0px;
   width: 100%;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
 }
 
 @media (max-width: 3000px) {
   /* For responsive */
+  .companylogo {
+    margin: 0px 8px;
+  }
 }
 
 @media (max-width: 1024px) {
   /* For responsive */
+  .companylogo {
+    min-width: 100px;
+  }
 }
 
 @media (max-width: 464px) {

@@ -1,3 +1,59 @@
+.firstDiv {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  margin-top: -15px;
+  overflow: hidden;
+  margin-left: -15px;
+  position: absolute;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  object-fit: fill;
+}
+
+.pageTitle {
+  position: absolute;
+  color: darkblue;
+  margin-top: 115px;
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  margin-top: 300px;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.span {
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.form {
+  border: 1px green solid;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.input:nth-child(3) {
+  height: 100px;
+}
+
 @media (max-width: 3000px) {
   /* For responsive */
 }

@@ -2,20 +2,21 @@
   width: 45%;
   margin: 0 2.5%;
   display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: start;
 }
 
 .employeeImage {
-  height: 200px;
-  max-width: 30%;
-  margin-right: 20px;
-  min-width: 165px;
+  width: 30%;
+  margin-right: 15px;
+  object-fit: fill;
 }
 
 .employeebio {
-  width: 70%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
-  min-width: 400px;
 }
 
 .jobtitle {
@@ -36,11 +37,16 @@
   font-style: italic;
 }
 
+.employeeli {
+  margin-left: -20px;
+}
+
 .employeelogos {
   width: 100%;
   display: flex;
+  justify-content: start;
   height: 60px;
-  padding: 0px 30px;
+  padding-right: 30px;
   box-sizing: border-box;
 }
 

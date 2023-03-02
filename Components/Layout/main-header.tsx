@@ -25,10 +25,12 @@ function MainHeader() {
   return (
     <header>
       {/* Reimplace with real logo */}
-      <FontAwesomeIcon
-        icon="prescription-bottle-medical"
-        className={classes.companylogo}
-      />
+      <Link href="/">
+        <FontAwesomeIcon
+          icon="prescription-bottle-medical"
+          className={classes.companylogo}
+        />
+      </Link>
       <nav className={classes.nav}>
         <Link href="/home" className={classes.link}>
           {textContent.EN.presentation}

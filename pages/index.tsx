@@ -39,9 +39,12 @@ export default function Home(props: any) {
           <span className={classes.question}>{text.EN.question}</span>
           <div className={classes.allbuttons}>
             <button className={classes.demobutton}>
-              <Link href="/home/demo" className={classes.link}>
+              <a
+                href="https://calendly.com/houee-pierrick/60min"
+                className={classes.link}
+              >
                 {text.EN.demo}
-              </Link>
+              </a>
             </button>
             <button className={classes.contactbutton}>
               <Link href="/home/contact" className={classes.link}>
@@ -77,9 +80,12 @@ export default function Home(props: any) {
         <span className={classes.finalquestion}>{text.EN.question}</span>
         <div className={classes.finalallbuttons}>
           <button className={classes.demobutton}>
-            <Link href="/home/demo" className={classes.link}>
+            <a
+              href="https://calendly.com/houee-pierrick/60min"
+              className={classes.link}
+            >
               {text.EN.demo}
-            </Link>
+            </a>
           </button>
           <button className={classes.contactbutton}>
             <Link href="/home/contact" className={classes.link}>

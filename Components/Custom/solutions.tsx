@@ -11,7 +11,7 @@ function SolutionsShort(props: any) {
         console.log(e);
         return (
           // <span>A</span>
-          <li key={i}>
+          <li key={i} className={classes.solutionli}>
             <span className={classes.trans}>{e.title.slice(0, 5)}</span>
             <span className={classes.bold} style={{ color: e.color }}>
               {makeFirstMaj(e.title.substring(5))}
@@ -52,7 +52,9 @@ function Solutions(props: any) {
                   icon="circle-check"
                   className={classes.tickcircle}
                 />
-                <span>{e.descriptionOne.EN}</span>
+                <span className={classes.solutionli}>
+                  {e.descriptionOne.EN}
+                </span>
               </li>
               <li className={classes.solutionli}>
                 <FontAwesomeIcon
