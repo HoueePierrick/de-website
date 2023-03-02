@@ -8,7 +8,6 @@ function SolutionsShort(props: any) {
   return (
     <ul className={classes.ul}>
       {data.map((e: any, i: number) => {
-        console.log(e);
         return (
           // <span>A</span>
           <li key={i} className={classes.solutionli}>

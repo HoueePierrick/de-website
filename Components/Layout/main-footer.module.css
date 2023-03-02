@@ -26,6 +26,10 @@
   line-height: 24px;
 }
 
+.none {
+  display: none;
+}
+
 @media (max-width: 3000px) {
   /* For responsive */
 }

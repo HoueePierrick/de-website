@@ -48,6 +48,10 @@
   margin-left: 10px;
 }
 
+.none {
+  display: none;
+}
+
 .ul {
   visibility: hidden;
 }

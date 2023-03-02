@@ -2,8 +2,13 @@ import React from "react";
 import Link from "next/link";
 import classes from "./main-header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/router";
 
 function MainHeader() {
+  const router = useRouter();
+  // Gives the page URL
+  const path = router.pathname;
+
   const textContent = {
     EN: {
       presentation: "Presentation",
@@ -22,7 +27,9 @@ function MainHeader() {
       connect: "Verbinden",
     },
   };
-  return (
+  return path === "/client" ? (
+    <header className={classes.none}></header>
+  ) : (
     <header>
       {/* Reimplace with real logo */}
       <Link href="/">

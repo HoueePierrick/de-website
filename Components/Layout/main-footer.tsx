@@ -2,8 +2,13 @@ import React from "react";
 import classes from "./main-footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function MainFooter() {
+  const router = useRouter();
+  // Gives the page URL
+  const path = router.pathname;
+
   const text = {
     DE: {
       about: "Über uns",
@@ -27,7 +32,9 @@ function MainFooter() {
     },
   };
 
-  return (
+  return path === "/client" ? (
+    <footer className={classes.none}></footer>
+  ) : (
     <footer>
       <div className={classes.footerDiv}>
         <h3 className={classes.h3}>{text.EN.about}</h3>
