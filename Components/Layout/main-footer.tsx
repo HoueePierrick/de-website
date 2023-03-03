@@ -32,8 +32,17 @@ function MainFooter() {
     },
   };
 
-  return path === "/client" ? (
-    <footer className={classes.none}></footer>
+  return path.slice(0, 7) === "/client" ? (
+    <footer className={classes.shortFooter}>
+      <div className={classes.footerDiv}>
+        {/* Reimplace with real logo */}
+        <FontAwesomeIcon
+          icon="prescription-bottle-medical"
+          className={classes.companylogo}
+        />
+        <span>{text.EN.rights}</span>
+      </div>
+    </footer>
   ) : (
     <footer>
       <div className={classes.footerDiv}>

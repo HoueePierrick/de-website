@@ -17,6 +17,7 @@ import {
   faMagnifyingGlassChart,
   faBusinessTime,
   faFilterCircleXmark,
+  faList,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faPrescriptionBottleMedical,
@@ -33,7 +34,8 @@ library.add(
   faShop,
   faMagnifyingGlassChart,
   faBusinessTime,
-  faFilterCircleXmark
+  faFilterCircleXmark,
+  faList
 );
 import Layout from "@/Components/Layout/layout";
 

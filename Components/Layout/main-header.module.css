@@ -56,6 +56,18 @@
   visibility: hidden;
 }
 
+.shortnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.shortnav > div {
+  font-size: 24px;
+  height: 100%;
+}
+
 @media (max-width: 3000px) {
   /* For responsive */
 }

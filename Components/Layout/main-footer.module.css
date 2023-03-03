@@ -30,6 +30,16 @@
   display: none;
 }
 
+.shortFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shortFooter > div {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 3000px) {
   /* For responsive */
 }

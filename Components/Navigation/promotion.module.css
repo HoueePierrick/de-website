@@ -1,3 +1,10 @@
+.navigation {
+  border: 1px green solid;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 3000px) {
   /* For responsive */
 }
